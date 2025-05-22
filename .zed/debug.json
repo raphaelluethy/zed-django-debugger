@@ -5,14 +5,14 @@
         "request": "launch",
         "subProcess": true,
         "redirectOutput": true,
-        "program": "/Users/raphael.luethy@fhnw.ch/Documents/projects/private/django-test/manage.py",
+        "program": "$ZED_PROJECT_ROOT/manage.py",
         "args": [
             "runserver",
             "0.0.0.0:8000"
         ],
         "django": true,
         "stopOnEntry": false,
-        "cwd": "/Users/raphael.luethy@fhnw.ch/Documents/projects/private/django-test"
+        "cwd": "$ZED_PROJECT_ROOT"
     },
     {
         "adapter": "Debugpy",
