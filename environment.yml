@@ -1,0 +1,43 @@
+name: django-test
+channels:
+    - conda-forge
+    - defaults
+dependencies:
+    - python=3.10.*
+    - django=4.2.*
+    - celery=5.3.*
+    - openssl=3.1.4
+    - psycopg2=2.9.7
+    - pip
+    - django-cors-headers
+    - numpy
+    - pandas
+    - djangorestframework
+    - pygraphviz
+    - django-extensions
+    - pytz
+    - pyparsing
+    - uritemplate
+    - pyyaml
+    - pillow
+    - python-dateutil
+    - scipy
+    - pymysql
+    - jinja2
+    - drf-spectacular
+    - matplotlib
+    - asgiref=3.7.2
+    - gunicorn
+    - debugpy
+    - pip:
+          #simple-jwt needs to be used from pip, as the conda-forge version is too old for our django version (maybe we can update it?)
+          - djangorestframework-simplejwt
+          - django-modeltranslation
+          - hlcpy
+          - coverage
+          - django-types
+          - django-stubs-ext
+          - psycopg2-binary
+          - django-celery-results
+          - sqlalchemy
+          - pytest
